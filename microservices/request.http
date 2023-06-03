@@ -1,0 +1,16 @@
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+    "email": "test@example.com"
+}
+
+###
+GET http://localhost:3000/analytics
+
+###
+GET http://localhost:3000
+
+###
+GET http://localhost:3001
+
