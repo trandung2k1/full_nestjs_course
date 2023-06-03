@@ -22,4 +22,7 @@ export class UsersService {
         );
         return findUser;
     }
+    async findAll(): Promise<User[]> {
+        return this.users;
+    }
 }

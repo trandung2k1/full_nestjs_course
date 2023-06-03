@@ -26,10 +26,10 @@ import { VerifyTokenMiddleware } from './middlewares/auth';
     ],
 })
 export class AppModule {
-    configure(consumer: MiddlewareConsumer) {
-        consumer.apply(VerifyTokenMiddleware).forRoutes({
-            path: '/',
-            method: RequestMethod.ALL,
-        });
-    }
+    // configure(consumer: MiddlewareConsumer) {
+    //     consumer.apply(VerifyTokenMiddleware).forRoutes({
+    //         path: '/',
+    //         method: RequestMethod.ALL,
+    //     });
+    // }
 }

@@ -8,4 +8,8 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4NTcyMzY2NiwiZXhwIjoxNjg1NzI0NTY2fQ.aUDSIn45sbQqUzU-8rEKUWDMiq912CZH-6s3HRlDx4Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4NTc1NDIxNywiZXhwIjoxNjg1NzU1MTE3fQ.qdQVJGueA1ZkR8vXRHl8voiwjCEJj16a090wqofe42U
+
+###
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY4NTc1NDIxNywiZXhwIjoxNjg1NzU1MTE3fQ.qdQVJGueA1ZkR8vXRHl8voiwjCEJj16a090wqofe42U
