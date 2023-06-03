@@ -1,4 +1,4 @@
-import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
+import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
@@ -26,10 +26,7 @@ import { VerifyTokenMiddleware } from './middlewares/auth';
     ],
 })
 export class AppModule {
-    // configure(consumer: MiddlewareConsumer) {
-    //     consumer.apply(VerifyTokenMiddleware).forRoutes({
-    //         path: '/',
-    //         method: RequestMethod.ALL,
-    //     });
-    // }
+    configure(consumer: MiddlewareConsumer) {
+        consumer.apply(VerifyTokenMiddleware).forRoutes('/');
+    }
 }

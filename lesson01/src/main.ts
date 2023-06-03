@@ -31,7 +31,7 @@ async function application() {
     await app.listen(port);
     console.log(colors.green(`Server listen on http://localhost:${port}`));
     const router = server._events.request._router;
-    const availableRoutes: [] = router.stack
+    const availableRoutes: any[] = router.stack
         .map((layer) => {
             if (layer.route) {
                 return {
@@ -45,6 +45,7 @@ async function application() {
         .filter((item) => item !== undefined);
     console.log('Routes: ', availableRoutes);
 }
+
 (async () => {
     await application();
 })();
