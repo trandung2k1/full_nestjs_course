@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  application:
+    image: nestjs:v1
+    container_name: nestjs_auth_static
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    # env_file: .env
+    volumes:
+      - './src:/app/src'
+    networks:
+      - trandung
+networks:
+  trandung:

@@ -1,0 +1,15 @@
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "Admin",
+    "password": "admin"
+}
+
+### Get profile
+GET http://localhost:3000/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiQWRtaW4iLCJpYXQiOjE2ODYwMTc4MzMsImV4cCI6MTY4NjEwNDIzM30.5_B4ETIHJGDPUHZ1Z734i6rTYajIOSMkDaoJsWaK448
+
+### 
+GET http://localhost:3000
