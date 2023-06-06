@@ -1,0 +1,37 @@
+### Login from static data
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "johndoe@gmail.com",
+    "password": "123456"
+}
+
+### Login user from DB
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "trandungksnb00@gmail.com",
+    "password": "trandung"
+}
+
+### Get users from static data
+GET http://localhost:3000/users/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2ODU5NTUwMTAsImV4cCI6MTY4NTk1ODYxMH0.uP2t0gBJNRmZRiVQxVEiButd4IYTJsKBwSPJb8GBAPk
+
+### Get users from DB
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2ODYwMTQ4MzcsImV4cCI6MTY4NjAxODQzN30.X3toX2I5HsFZfO3bNExcGnueV2mVDYbmt41-SLQEcbY
+
+### Register and save to DB
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Tran",
+    "lastName": "Dung",
+    "age": 21,
+    "email": "trandungksnb00@gmail.com",
+    "password": "trandung"
+}
